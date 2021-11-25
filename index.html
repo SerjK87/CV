@@ -1,82 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8"/>
-  <title>Sergey CV</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Sergey CV</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="info">
+        <img
+          src=".\images\avatar.jpg"
+          alt="тут должен быть аватар"
+          class="avatar"
+        />
+        <div class="info-text">
+          <h1>Сергей Кириллов</h1>
+          <p>Являюсь <strong> ИТ </strong> специалистом с 2006 года.</p>
+          <p>Нравится работать с железом и программированием</p>
 
-  <table  cellspacing = "15">
-    <tr>
-      <td><img src=".\images\avatar.jpg" width="150" alt="тут должен быть аватар"></td>
-      <td><h1>Сергей Кириллов</h1> 
-    <p> <em> Являюсь <strong> ИТ </strong> специалистом с 2006 года.</em></p>
-    <p>Нравится работать с железом и программированием</p>
+          <h2>Мои социальные сети</h2>
+          <a href="https://vk.com" target="_blank">vk</a> |
+          <a href="whatsapp" target="_blank">whatsapp</a> |
+          <a href="insta" target="_blank">instagram</a>
+        </div>
+      </div>
+      <div class="card bg-yellow list">
+        <h4>Мои хобби</h4>
+        <ol>
+          <li>Программирование</li>
+          <li>Сериалы</li>
+        </ol>
+      </div>
 
-</td>
-    </tr>
-  </table>
-   <hr> 
-  
-  <h2>Мои социальные сети</h2>
-  <ul>
-    <li><a href="https://vk.com" target="_blank">vk</a> </li>
-    <li><a href="whatsapp" target="_blank">whatsapp</a> </li>
-    <li><a href="insta" target="_blank">instagram</a> </li>
-  </ul>
-  <hr>
-  <h2>Мои хобби</h2>
-  <ol>
-    <li>Программирование</li>
-    <li>Сериалы</li>
-  </ol>
-  <hr>
-    <h2>Опыт работы</h2>
-    <table >
-      <thead>
-         <tr>
-        <th>Company</th>
-        <th>Position</th>
-        <th>Years</th>
-      </tr> 
-      </thead>
-      <tbody>
-        <tr>
-        <td>EPAM</td>
-        <td>software engineer</td>
-        <td>2016-2017</td>
-      </tr>
-      <tr>
-        <td>KazStroyService</td>
-        <td>it specialist</td>
-        <td>2015-2019</td>
-      </tr>
-      </tbody>
-      <tfoot> </tfoot>
-     
-      
-    </table>
-    <hr>
-  <h2>Youtube courses</h2>
-  <a href=".\youtube.html" target="_blank">View list</a>
+      <div class="card bg-green">
+        <h2>Опыт работы</h2>
+        <table class="table">
+          <tbody>
+            <tr>
+              <td>EPAM</td>
+              <td>software engineer</td>
+              <td>2010-2012</td>
+            </tr>
+            <tr>
+              <td>KazStroyService</td>
+              <td>it specialist</td>
+              <td>2012-2015</td>
+            </tr>
+            <tr>
+              <td>KazMunaiGaz</td>
+              <td>it specialist</td>
+              <td>2015-2019</td>
+            </tr>
+            <tr>
+              <td>AstanaService</td>
+              <td>it specialist</td>
+              <td>2020-now</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
 
-  <hr>
+      <div class="card bg-red">
+        <h2>Youtube courses</h2>
+        <ul class="link-list">
+          <li>
+            <a href="https://youtube.com" target="_blank">Youtube video 1</a>
+          </li>
+          <li>
+            <a href="https://youtube.com" target="_blank">Youtube video 2</a>
+          </li>
+        </ul>
+      </div>
 
-  <h2>Contact with me</h2>
-    <form action="/">
-      <label for="name">Your Name</label>
-      <input type="text" id="name" placeholder="type your name">
-      <br>
-      <label for="email">Your email</label>
-      <input type="email" id="email" placeholder="type your email">
-      <br>
-      <label for="text">Your text</label>
-      <textarea id="text" cols="30" rows="10"></textarea>
-      <br>
-      <input type="submit" value="contact">
+      <hr />
+      <div class="contact">
+        <h2>Contact with me</h2>
+        <form action="/">
+          <div class="row">
+            <div class="form-group">
+              <label for="name">Your name</label>
+              <input type="text" id="name" placeholder="type your name" />
+            </div>
 
-    </form>
+            <div class="form-group">
+              <label for="email">Your email</label>
+              <input type="email" id="email" placeholder="type your email" />
+            </div>
+          </div>
 
+          <div class="form-group">
+            <label for="text">Your text</label>
+            <textarea id="text" cols="30" rows="5"></textarea>
+          </div>
 
-</body>
+          <input class="btn" type="submit" value="contact" />
+        </form>
+
+        <div class="position">
+          <div class="box"></div>
+        </div>
+      </div>
+
+      <div style="margin-bottom: 500px"></div>
+    </div>
+  </body>
 </html>
